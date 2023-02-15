@@ -1,5 +1,6 @@
+from django.shortcuts import render
 from rest_framework.generics import GenericAPIView
-from .serializers import UserSerializer
+from .serializers import UserSerializer, LoginSerializer
 from rest_framework.response import Response
 from rest_framework import status
 from django.conf import settings
@@ -28,7 +29,7 @@ class LoginView(GenericAPIView):
         if user:
             key = 'JWT_SECRET_KEY'
             auth_token = jwt.encode(
-                {'user': 'payload'}, key
+                {'user': user.username}, key, algorithm="HS256"
                 )
 
             serializer = UserSerializer(user)
