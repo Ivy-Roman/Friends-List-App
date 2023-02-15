@@ -7,5 +7,5 @@ class ContactSerializer(ModelSerializer):
         model = Contact
 
         fields = [
-            'country_code', 'first_name', 'last_name', 'phone_number', 'contact_picture', 'is_favorite'
+            'country_code', 'id','first_name', 'last_name', 'phone_number', 'contact_picture', 'is_favorite'
             ]
