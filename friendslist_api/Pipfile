@@ -11,6 +11,8 @@ drf-yasg = "*"
 django-cors-headers = "*"
 gunicorn = "*"
 psycopg2 = "*"
+dj-database-url = "*"
+whitenoise = "*"
 
 [dev-packages]
 
