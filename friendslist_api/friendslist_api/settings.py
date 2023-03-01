@@ -27,7 +27,7 @@ SECRET_KEY = 'django-insecure-$e+h_^u%8efwi$_)!0+ziumi(jxei-#n@z@c-@$)h+!sc*ud@k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['friendlistapi.fly.dev']
 
 
 # Application definition
@@ -142,7 +142,11 @@ JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY')
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATIC_URL = '/static/'
+
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
