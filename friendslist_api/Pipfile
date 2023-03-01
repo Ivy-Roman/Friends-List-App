@@ -10,9 +10,9 @@ pyjwt = "*"
 drf-yasg = "*"
 django-cors-headers = "*"
 gunicorn = "*"
-psycopg2 = "*"
 dj-database-url = "*"
 whitenoise = "*"
+psycopg2-binary = "*"
 
 [dev-packages]
 
