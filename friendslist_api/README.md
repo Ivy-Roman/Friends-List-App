@@ -1,4 +1,4 @@
-# Friends-List-App
+# Friends-List-Api
 Contact api with django and django rest framework
 
 ### Features
