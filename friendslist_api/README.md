@@ -28,6 +28,9 @@ Contact api with django and django rest framework
 | PATCH | /contacts/{id} | Partially update contacts | request.params.id |
 | DELETE | /contacts/{id} | Delete a contact | request.params.id |
 
+### Deployment
+This API is deployed to Fly.io and can be accessed on [https://friendlistapi.fly.dev/](https://friendlistapi.fly.dev/)
+
 ### Author(s)
 * [Ivie Osoiye](https://github.com/Ivy-Roman)
 
